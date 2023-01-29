@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>My Library</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1 id="icon">My Library</h1>
+      <button id="login">Log In</button>
+    </header>
+
+    <main>
+      <button id="addbook">+ Add Book</button>
+      <div id="books-grid"></div>
+    </main>
+
+    <footer>
+      <p id="footer">Copyright © 2023 realrohith</p>
+    </footer>
+    <div class="modal">
+      <form id="addBookForm">
+        <p>Add New Book</p>
+        <input type="text" class="title" placeholder="Title" required /><input
+          type="text"
+          class="author"
+          placeholder="Author"
+          required
+        /><input type="number" class="pages" placeholder="Pages" required />
+        <div class="read-status">
+          <label for="haveRead">Have you read it?</label>
+          <input type="checkbox" id="haveRead" />
+        </div>
+        <button class="submit" type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
